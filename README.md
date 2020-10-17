@@ -1,4 +1,5 @@
 # Learning-from-Label-Proportions
+0. Please cite *Clayton Scott and Jianxin Zhang, "Learning from Label Proportions: A Mutual Contamination Framework"*
 1. Dependencies:
     * for LMMCM:
         * download and install Anaconda 
