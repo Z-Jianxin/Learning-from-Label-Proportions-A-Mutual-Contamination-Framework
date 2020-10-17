@@ -1,0 +1,107 @@
+kernel = rbf, gamma = scale, regularizer = 1.0, loss = <class 'utils.model_utils.LogisticLoss'>, method = ('L-BFGS-B', {'ftol': 1e-05, 'maxiter': 100, 'maxcor': 80}), exclusion_param = 0, 
+bag_loss_mean = 0.7500, bag_loss_std = 0.3791 
+noisy_loss_mean = 0.6923, noisy_loss_std = 0.0003 
+accuracy_mean = 0.6687, accuracy_std = 0.0829, balanced_accuracy_mean = 0.5349, balanced_accuracy_std = 0.0943, 
+
+kernel = rbf, gamma = scale, regularizer = 0.1, loss = <class 'utils.model_utils.LogisticLoss'>, method = ('L-BFGS-B', {'ftol': 1e-05, 'maxiter': 100, 'maxcor': 80}), exclusion_param = 0, 
+bag_loss_mean = 0.7000, bag_loss_std = 0.3841 
+noisy_loss_mean = 0.6858, noisy_loss_std = 0.0018 
+accuracy_mean = 0.6687, accuracy_std = 0.0755, balanced_accuracy_mean = 0.5484, balanced_accuracy_std = 0.1020, 
+
+kernel = rbf, gamma = scale, regularizer = 0.01, loss = <class 'utils.model_utils.LogisticLoss'>, method = ('L-BFGS-B', {'ftol': 1e-05, 'maxiter': 100, 'maxcor': 80}), exclusion_param = 0, 
+bag_loss_mean = 0.7500, bag_loss_std = 0.3260 
+noisy_loss_mean = 0.6694, noisy_loss_std = 0.0379 
+accuracy_mean = 0.6500, accuracy_std = 0.1016, balanced_accuracy_mean = 0.5320, balanced_accuracy_std = 0.1088, 
+
+kernel = rbf, gamma = scale, regularizer = 0.001, loss = <class 'utils.model_utils.LogisticLoss'>, method = ('L-BFGS-B', {'ftol': 1e-05, 'maxiter': 100, 'maxcor': 80}), exclusion_param = 0, 
+bag_loss_mean = 0.7250, bag_loss_std = 0.3984 
+noisy_loss_mean = 1.2957, noisy_loss_std = 1.0070 
+accuracy_mean = 0.6750, accuracy_std = 0.0580, balanced_accuracy_mean = 0.5055, balanced_accuracy_std = 0.0783, 
+
+kernel = rbf, gamma = scale, regularizer = 0.0001, loss = <class 'utils.model_utils.LogisticLoss'>, method = ('L-BFGS-B', {'ftol': 1e-05, 'maxiter': 100, 'maxcor': 80}), exclusion_param = 0, 
+bag_loss_mean = 0.7750, bag_loss_std = 0.5087 
+noisy_loss_mean = 9.5725, noisy_loss_std = 9.9031 
+accuracy_mean = 0.6813, accuracy_std = 0.0848, balanced_accuracy_mean = 0.4924, balanced_accuracy_std = 0.0429, 
+
+kernel = rbf, gamma = scale, regularizer = 1e-05, loss = <class 'utils.model_utils.LogisticLoss'>, method = ('L-BFGS-B', {'ftol': 1e-05, 'maxiter': 100, 'maxcor': 80}), exclusion_param = 0, 
+bag_loss_mean = 0.7500, bag_loss_std = 0.5062 
+noisy_loss_mean = -inf, noisy_loss_std = nan 
+accuracy_mean = 0.6750, accuracy_std = 0.0829, balanced_accuracy_mean = 0.4984, balanced_accuracy_std = 0.0230, 
+
+
+
+
+final train:
+best params: { 
+balanced_accuracy : {'kernel': 'rbf', 'gamma': 'scale', 'regularizer': 0.1, 'loss': <class 'utils.model_utils.LogisticLoss'>}, 
+balanced_accuracy : {'method': ('L-BFGS-B', {'ftol': 1e-05, 'maxiter': 100, 'maxcor': 80}), 'exclusion_param': 0}, 
+accuracy : {'kernel': 'rbf', 'gamma': 'scale', 'regularizer': 0.0001, 'loss': <class 'utils.model_utils.LogisticLoss'>}, 
+accuracy : {'method': ('L-BFGS-B', {'ftol': 1e-05, 'maxiter': 100, 'maxcor': 80}), 'exclusion_param': 0}, 
+noisy_loss : {'kernel': 'rbf', 'gamma': 'scale', 'regularizer': 1e-05, 'loss': <class 'utils.model_utils.LogisticLoss'>}, 
+noisy_loss : {'method': ('L-BFGS-B', {'ftol': 1e-05, 'maxiter': 100, 'maxcor': 80}), 'exclusion_param': 0}, 
+bag_loss : {'kernel': 'rbf', 'gamma': 'scale', 'regularizer': 0.1, 'loss': <class 'utils.model_utils.LogisticLoss'>}, 
+bag_loss : {'method': ('L-BFGS-B', {'ftol': 1e-05, 'maxiter': 100, 'maxcor': 80}), 'exclusion_param': 0}, 
+
+}
+
+
+
+
+
+
+
+
+
+
+noisy_loss :
+accuracy = 0.7294
+balanced_accuracy = 0.6045
+auc = 0.6375
+confusion_matrix =
+ +----------+------------+------------+
+|          |   pred pos |   pred neg |
++==========+============+============+
+| true pos |   0.841174 |   0.158826 |
++----------+------------+------------+
+| true neg |   0.63225  |   0.36775  |
++----------+------------+------------+
+
+
+
+
+bag_loss :
+accuracy = 0.7649
+balanced_accuracy = 0.5714
+auc = 0.5972
+confusion_matrix =
+ +----------+------------+------------+
+|          |   pred pos |   pred neg |
++==========+============+============+
+| true pos |   0.938078 |   0.061922 |
++----------+------------+------------+
+| true neg |   0.795319 |   0.204681 |
++----------+------------+------------+
+
+
+
+
+extra tests results:
+
+bag_loss: 
+
+test_10: acc=0.8610, bacc=0.5554
+test_25: acc=0.7443, bacc=0.5536
+test_50: acc=0.5730, bacc=0.5730
+test_75: acc=0.3893, bacc=0.5702
+test_90: acc=0.2830, bacc=0.5720
+
+
+
+noisy_loss: 
+
+test_10: acc=0.7953, bacc=0.6019
+test_25: acc=0.7067, bacc=0.5827
+test_50: acc=0.6040, bacc=0.6040
+test_75: acc=0.4837, bacc=0.6002
+test_90: acc=0.4147, bacc=0.5933
+

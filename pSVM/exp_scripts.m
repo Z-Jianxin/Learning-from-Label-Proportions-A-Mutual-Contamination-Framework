@@ -1,0 +1,7 @@
+run_exp(@InvCal_cv, "./data/cardio_one_trial_ms_formal_0/cardio_one_trial_ms_formal_0", "./exp_res/cardio_one_trial_ms_formal_0_InvCal_res.mat", [10], 5)
+run_exp(@alterPSVM_cv, "./data/cardio_one_trial_ms_formal_0/cardio_one_trial_ms_formal_0", "./exp_res/cardio_one_trial_ms_formal_0_alter_res.mat", [10], 5)
+%run_exp(@convPSVM_cv, "./data/german_bank/german_bank", "./exp_res/german_bank_conv_res.mat")
+run_exp(@InvCal_cv, "./data/cardio_one_trial_ms_formal_1/cardio_one_trial_ms_formal_1", "./exp_res/cardio_one_trial_ms_formal_1_InvCal_res.mat", [10], 5)
+run_exp(@alterPSVM_cv, "./data/cardio_one_trial_ms_formal_1/cardio_one_trial_ms_formal_1", "./exp_res/cardio_one_trial_ms_formal_1_alter_res.mat", [10], 5)
+run_exp(@InvCal_cv, "./data/cardio_one_trial_ms_formal_2/cardio_one_trial_ms_formal_2", "./exp_res/cardio_one_trial_ms_formal_2_InvCal_res.mat", [10], 5)
+run_exp(@alterPSVM_cv, "./data/cardio_one_trial_ms_formal_2/cardio_one_trial_ms_formal_2", "./exp_res/cardio_one_trial_ms_formal_2_alter_res.mat", [10], 5)
